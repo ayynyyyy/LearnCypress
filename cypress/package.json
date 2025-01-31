@@ -1,0 +1,11 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "automation UI sing cypress",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^13.17.0"
+  }
+}
+
