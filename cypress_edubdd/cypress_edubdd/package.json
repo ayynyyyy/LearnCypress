@@ -1,0 +1,22 @@
+{
+  "name": "cypress_bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^14.0.0"
+  },
+  "dependencies": {
+    "prettier": "^3.4.2"
+  }
+}
