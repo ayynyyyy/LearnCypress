@@ -13,3 +13,20 @@ describe('Basic Authentication', () =>{
         cy.get('p').should('include.text', 'Congratulations! You must have the proper credentials.')
     });
 })
+//TUGAS AUTHENTICATION
+
+describe('Authentication with token', ()=>{
+    it('Successfully login with token', () =>{
+        cy.LoginViaAPI()
+        cy.request({
+            method: 'POST',
+            url: `${Cypress.env('apiUrl')}/protected/resource`,
+            headers: {
+                Authorization: `Bearer ${Cypress.env('authToken')}`
+            }
+        }).then((response) => {
+            expect(response.status).to.eq(200);
+            expect(response.body).to.have.property('data');
+        });
+    })
+})
